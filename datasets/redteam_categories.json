@@ -1,0 +1,698 @@
+[
+  {
+    "id": "healthcare",
+    "title": "Healthcare & Medical Science",
+    "icon": "🏥",
+    "description": "Medical conspiracies, unproven miracle remedies, and clinical trial findings vs verified official health advisories.",
+    "examples": [
+      {
+        "headline": "Whistleblower Exposes Big Pharma Concealing 100% Herbal Cancer Cure",
+        "article": "Secret internal pharmaceutical memorandums allegedly show major drug corporations suppressed a natural plant extract to safeguard chemotherapy profits.",
+        "expected": "Fake",
+        "tag": "Conspiracy / Unsubstantiated"
+      },
+      {
+        "headline": "FDA Grants Full Approval to Novel mRNA Oncology Vaccine Following Phase 3 Trials",
+        "article": "The Food and Drug Administration announced regulatory approval for an mRNA-based melanoma therapeutic after randomized controlled clinical trials demonstrated a 44 percent reduction in recurrence risk.",
+        "expected": "Reliable",
+        "tag": "Verified Regulatory Action"
+      },
+      {
+        "headline": "Inhaling Concentrated Hydrogen Peroxide Vapor Cures Respiratory Syncytial Virus in 12 Hours",
+        "article": "Viral social media broadcasts urge parents to diffuse hydrogen peroxide into infants nurseries to eliminate viral respiratory infections overnight.",
+        "expected": "Fake",
+        "tag": "Dangerous Health Hoax"
+      },
+      {
+        "headline": "CDC Issues Advisory on Multi-State E. Coli Contamination Linked to Pre-Packaged Romaine Lettuce",
+        "article": "The Centers for Disease Control and Prevention confirmed 49 verified infections across 10 states and recommended discarding implicated production lot batches.",
+        "expected": "Reliable",
+        "tag": "Official Epidemiological Alert"
+      },
+      {
+        "headline": "Drinking Silver Nanoparticles Provides Lifetime Immunity Against All Infectious Strains",
+        "article": "Alternative medicine distributors assert colloidal silver tonics cleanse the human bloodstream of cellular pathogens and replace annual immunizations.",
+        "expected": "Fake",
+        "tag": "Fraudulent Health Panacea"
+      },
+      {
+        "headline": "World Health Organization Reports Global Malaria Deaths Dropped by 3 Percent This Year",
+        "article": "According to the annual World Malaria Report, expanded distribution of insecticide-treated bed nets and rollout of the R21 vaccine contributed to noticeable morbidity decreases in sub-Saharan Africa.",
+        "expected": "Reliable",
+        "tag": "Peer-Reviewed Global Report"
+      },
+      {
+        "headline": "Routine Dental X-Rays Embed Microscopic Monitoring Chips in Jawbones",
+        "article": "Independent bloggers claim routine panoramic dental scanning equipment secretly installs quantum micro-trackers under dental fillings during routine cavities work.",
+        "expected": "Fake",
+        "tag": "Fabricated Surveillance Hoax"
+      },
+      {
+        "headline": "NIH Multicenter Trial Finds SGLT2 Inhibitors Reduce Heart Failure Hospitalizations by 26 Percent",
+        "article": "A double-blind randomized clinical trial supported by the National Institutes of Health demonstrated meaningful reduction in cardiovascular mortality among diabetic patients.",
+        "expected": "Reliable",
+        "tag": "Clinical Journal Publication"
+      },
+      {
+        "headline": "Drinking Boiling Salt Water Flushes Out Cardiovascular Arterial Plaque Within Two Weeks",
+        "article": "Unlicensed wellness coaches promise that hyper-saline flushes dissolve calcified arterial blockages without prescription medication or coronary bypass surgery.",
+        "expected": "Fake",
+        "tag": "Medical Disinformation"
+      },
+      {
+        "headline": "American Academy of Pediatrics Updates Infant Sleep Safety Guidelines to Prevent SIDS",
+        "article": "Pediatric specialists issued updated guidelines emphasizing flat non-inclined sleep surfaces and room sharing without bed sharing to reduce sudden unexpected infant deaths.",
+        "expected": "Reliable",
+        "tag": "Accredited Medical Guidance"
+      },
+      {
+        "headline": "Sunscreen Chemicals Rewire Human DNA to Induce Sun Allergies and Skin Malignancies",
+        "article": "Online fitness influencers claim mineral sunscreens are chemical bio-weapons engineered to block spiritual solar radiation and trigger epidermal breakdowns.",
+        "expected": "Fake",
+        "tag": "Sensationalist Pseudoscience"
+      },
+      {
+        "headline": "Lancet Oncology Study Demonstrates Human Papillomavirus Vaccine Slashes Cervical Cancer Incidence by 87 Percent",
+        "article": "A 10-year prospective registry study in England confirmed dramatic reductions in pre-invasive and invasive cervical carcinomas among individuals vaccinated in adolescence.",
+        "expected": "Reliable",
+        "tag": "Reputable Journal Finding"
+      },
+      {
+        "headline": "Consuming Unpasteurized Raw Milk Neutralizes Diabetes Antibodies in 30 Days",
+        "article": "Holistic forums claim unpasteurized bovine dairy cures autoimmune type 1 diabetes by restoring primitive digestive bacterial colonies.",
+        "expected": "Fake",
+        "tag": "Unsubstantiated Medical Claim"
+      },
+      {
+        "headline": "FDA Approves First Non-Prescription Daily Oral Contraceptive Pill for Over-the-Counter Sales",
+        "article": "The agency cleared the progestin-only daily oral contraceptive Opill for commercial retail distribution without a prescription nationwide.",
+        "expected": "Reliable",
+        "tag": "Official FDA Decision"
+      },
+      {
+        "headline": "Pharmaceutical Giant Adds Mind-Altering Compounds to Common Antacid Liquids",
+        "article": "Conspiracy newsletters claim heartburn remedies contain sub-perceptual tranquilizers aimed at quelling civic demonstrations.",
+        "expected": "Fake",
+        "tag": "Unfounded Conspiracy"
+      },
+      {
+        "headline": "National Institute on Aging Clinical Trial Validates Lecanemab Slows Alzheimer Cognitive Decline",
+        "article": "Phase 3 eighteen-month trial data confirmed lecanemab reduced amyloid plaques and demonstrated a statistically significant 27 percent slowing of clinical cognitive deterioration.",
+        "expected": "Reliable",
+        "tag": "Verified Clinical Research"
+      },
+      {
+        "headline": "Hospital Microbes Engineered in Military Laboratories Spread Through Water Dispensers",
+        "article": "Anonymous telegram channels spread rumors that methicillin-resistant infections are airborne weapons intentionally deployed in municipal hospital lobbies.",
+        "expected": "Fake",
+        "tag": "Bioterrorism Rumor"
+      },
+      {
+        "headline": "Mayo Clinic Researchers Identify Molecular Biomarker Predicting Chemotherapy Cardiotoxicity",
+        "article": "Cardiology researchers identified circulating troponin variants that allow oncologists to modify anthracycline dosing schedules before cardiac damage occurs.",
+        "expected": "Reliable",
+        "tag": "Verified Hospital Research"
+      }
+    ]
+  },
+  {
+    "id": "economy",
+    "title": "Economy, Jobs & Financial Markets",
+    "icon": "📈",
+    "description": "Market panics, inflation rumors, currency reset hoaxes vs verified reports from the Federal Reserve, BLS, and Treasury.",
+    "examples": [
+      {
+        "headline": "Emergency Banking Holiday Ordered: Federal Reserve to Seize All Private Savings Accounts by Friday",
+        "article": "Panic broadcast warnings claim the federal government has quietly enacted martial financial provisions to freeze commercial checking balances over 500 dollars.",
+        "expected": "Fake",
+        "tag": "Fabricated Bank Run Rumor"
+      },
+      {
+        "headline": "Bureau of Labor Statistics Reports Consumer Price Index Rose 0.3 Percent in December",
+        "article": "The Consumer Price Index for All Urban Consumers increased 0.3 percent seasonally adjusted, led by shelter and energy price components, the Bureau reported.",
+        "expected": "Reliable",
+        "tag": "Official Economic Index"
+      },
+      {
+        "headline": "Global Digital Currency Reset Will Wipe Out Physical Cash and Cancel All Public Debts Overnight",
+        "article": "Speculative financial videos assure subscribers that world leaders signed an emergency treaty establishing a single biometric credit ledger and liquidating household mortgages.",
+        "expected": "Fake",
+        "tag": "Currency Reset Conspiracy"
+      },
+      {
+        "headline": "Federal Open Market Committee Maintains Benchmark Federal Funds Rate at 5.25 to 5.50 Percent",
+        "article": "Following its two-day monetary policy meeting, the FOMC voted unanimously to sustain current policy interest rates while monitoring economic indicators and labor conditions.",
+        "expected": "Reliable",
+        "tag": "Federal Reserve Announcement"
+      },
+      {
+        "headline": "US Treasury Secretly Minted Trillion Dollar Platinum Coins to Pay Off External Foreign Creditors",
+        "article": "Social media commentary claims three covert high-denomination platinum tokens were transferred to offshore depository accounts without congressional oversight.",
+        "expected": "Fake",
+        "tag": "Monetary Myth"
+      },
+      {
+        "headline": "Commerce Department Reports Gross Domestic Product Rose at an Annualized Rate of 3.3 Percent in Q4",
+        "article": "Real gross domestic product expanded at an annual rate of 3.3 percent in the fourth quarter, according to the advance estimate released by the Bureau of Economic Analysis.",
+        "expected": "Reliable",
+        "tag": "Official Government Statistics"
+      },
+      {
+        "headline": "Internal Revenue Service Initiates 95 Percent Surtax on Small Business Grocery Sales",
+        "article": "Chain emails claim new federal legislation imposes confiscatory taxes on neighborhood grocery stores to enforce corporate consolidation.",
+        "expected": "Fake",
+        "tag": "Tax Disinformation"
+      },
+      {
+        "headline": "U.S. Agricultural Exports Reached 178 Billion Dollars in Prior Fiscal Year, USDA Confirms",
+        "article": "The Department of Agriculture documented strong export figures across soybeans, corn, and livestock products, supported by demand from key Asia-Pacific markets.",
+        "expected": "Reliable",
+        "tag": "USDA Foreign Ag Service"
+      },
+      {
+        "headline": "Automatic ATM Shutdown Scheduled for Every Domestic Bank Starting Midnight Nationwide",
+        "article": "Alarmist text messages claim the banking grid will completely stop cash dispensing operations for two weeks due to sovereign insolvency.",
+        "expected": "Fake",
+        "tag": "Banking Panic Fabrication"
+      },
+      {
+        "headline": "Treasury Yields Decline as Long-Term Inflation Expectations Remain Firmly Anchored",
+        "article": "Yields on benchmark 10-year Treasury notes settled down four basis points following modest wholesale price index releases and steady auction demand.",
+        "expected": "Reliable",
+        "tag": "Financial Market Coverage"
+      },
+      {
+        "headline": "European Central Bank Declares All Paper Euro Banknotes Void by Month End",
+        "article": "Viral chain posts falsely advise citizens to dump euro notes into precious metal swaps before an alleged immediate demonetization decree.",
+        "expected": "Fake",
+        "tag": "Currency Devaluation Hoax"
+      },
+      {
+        "headline": "Federal Trade Commission Sues Major E-Commerce Platform Over Alleged Anti-Competitive Practices",
+        "article": "The FTC, joined by 17 state attorneys general, filed an antitrust lawsuit alleging monopolistic practices in online marketplace pricing and vendor agreements.",
+        "expected": "Reliable",
+        "tag": "Antitrust Regulatory Filing"
+      },
+      {
+        "headline": "Every Citizen to Receive 50,000 Dollar Government Sovereign Dividend Under New Secret Stimulus Law",
+        "article": "Websites pretending to be financial news outlets urge readers to input their social security numbers to unlock supposed sovereign wealth treasury grants.",
+        "expected": "Fake",
+        "tag": "Phishing Stimulus Scam"
+      },
+      {
+        "headline": "Securities and Exchange Commission Approves First Spot Bitcoin Exchange-Traded Products",
+        "article": "The SEC approved the listing and trading of multiple spot bitcoin exchange-traded product shares, expanding investor access through registered national securities exchanges.",
+        "expected": "Reliable",
+        "tag": "SEC Regulatory Release"
+      },
+      {
+        "headline": "IMF Demands Immediate 80 Percent Tax on All Private Homeowners Worldwide",
+        "article": "A widely shared blog post claims the International Monetary Fund has ordered participating member nations to seize home equity through arbitrary liens.",
+        "expected": "Fake",
+        "tag": "Misleading Policy Claim"
+      },
+      {
+        "headline": "Export-Import Bank Authorizes 500 Million Financing for Renewable Energy Infrastructure in Africa",
+        "article": "The board of directors approved financing transactions to support American engineering exports for solar and grid storage projects across sub-Saharan utilities.",
+        "expected": "Reliable",
+        "tag": "Government Agency Release"
+      },
+      {
+        "headline": "Commercial Airlines to Charge Passengers Fee for Inflight Breathing Oxygen Starting Next Month",
+        "article": "Satirical articles reshared as factual reportage claim low-cost carriers will bill passengers per cubic foot of cabin air intake during transit.",
+        "expected": "Fake",
+        "tag": "Satire Mistaken for News"
+      },
+      {
+        "headline": "Congressional Budget Office Projects Federal Budget Deficit for Fiscal Year at 1.6 Trillion Dollars",
+        "article": "The CBO baseline budget review estimates deficit totals driven by mandatory entitlement growth, debt service payments, and defense procurement appropriations.",
+        "expected": "Reliable",
+        "tag": "Non-Partisan Agency Report"
+      }
+    ]
+  },
+  {
+    "id": "politics",
+    "title": "Politics & Government Policy",
+    "icon": "🏛️",
+    "description": "Electoral disinformation, fabricated legislation, altered vote counts vs verified congressional roll calls and judicial rulings.",
+    "examples": [
+      {
+        "headline": "Supreme Court Secretly Suspends Constitution and Disbands Bicameral Congress Indefinitely",
+        "article": "Clickbait blogs falsely allege the judicial branch invoked a non-existent clause to dissolve legislative branches and declare military governorship.",
+        "expected": "Fake",
+        "tag": "Constitutional Fabrications"
+      },
+      {
+        "headline": "Senate Passes Bipartisan FAA Reauthorization Bill by 88 to 4 Margin",
+        "article": "The Senate approved comprehensive legislation authorizing funding for aviation safety oversight, air traffic controller staffing, and airport infrastructure modernization.",
+        "expected": "Reliable",
+        "tag": "Congressional Record"
+      },
+      {
+        "headline": "Voting Machines in 22 States Were Reprogrammed via Foreign Satellites During State Primaries",
+        "article": "Unverified message board claims claim voting tabulation equipment lacked physical isolation and received cryptographic commands altering municipal tally totals.",
+        "expected": "Fake",
+        "tag": "Election Disinformation"
+      },
+      {
+        "headline": "Department of Justice Indicts Former Intelligence Contractor for Unauthorized Retention of Classified Documents",
+        "article": "A federal grand jury returned an indictment charging a former defense analyst with willful retention of national defense documents under the Espionage Act.",
+        "expected": "Reliable",
+        "tag": "DOJ Press Release"
+      },
+      {
+        "headline": "Federal Government Enacts Mandatory Microchip Implantation for All Newborn Infants Starting in January",
+        "article": "Conspiracy publications assert newborn birth certificates now require a mandatory subcutaneous tracking device under recent child welfare amendments.",
+        "expected": "Fake",
+        "tag": "Biometric Surveillance Hoax"
+      },
+      {
+        "headline": "Supreme Court Rules 6-3 in Clean Water Act Jurisdiction Regarding Wetland Boundaries",
+        "article": "The Supreme Court held that the Clean Water Act extends only to wetlands with a continuous surface connection to bodies of water that are waters of the United States.",
+        "expected": "Reliable",
+        "tag": "Supreme Court Opinion"
+      },
+      {
+        "headline": "Foreign Government Formally Annexes Three Alaskan Islands Without Military Resistance",
+        "article": "Tabloid outlets publish fabricated satellite pictures claiming Russian maritime forces occupied the Aleutian chain without diplomatic protest from Washington.",
+        "expected": "Fake",
+        "tag": "Geopolitical Falsehood"
+      },
+      {
+        "headline": "Bipartisan Congressional Delegation Concludes Diplomatic Meetings with Baltic Allies",
+        "article": "Members of the House Foreign Affairs Committee completed bilateral security consultations in Vilnius and Tallinn affirming NATO collective defense commitments.",
+        "expected": "Reliable",
+        "tag": "Congressional Press Release"
+      },
+      {
+        "headline": "United Nations Declares International Treaty Prohibiting All Sovereign Flags in Public Buildings",
+        "article": "A widely circulated social post claims a UN resolution mandates the confiscation of national emblems in public municipal council chambers.",
+        "expected": "Fake",
+        "tag": "Sovereignty Rumor"
+      },
+      {
+        "headline": "State Department Confirms Diplomatic Exchange Resulted in Release of Two Detained Citizens",
+        "article": "U.S. officials announced the safe return of two American nationals held abroad following negotiations facilitated by regional intermediary diplomats.",
+        "expected": "Reliable",
+        "tag": "State Department Briefing"
+      },
+      {
+        "headline": "New Law Requires Citizens to Surrender Private Smartphones to Local Police for Routine Audits",
+        "article": "Misleading videos claim city governments passed ordinances authorizing random inspections of citizen messaging apps without search warrants.",
+        "expected": "Fake",
+        "tag": "Civil Liberties Misinformation"
+      },
+      {
+        "headline": "Census Bureau Releases Updated Metropolitan Population Estimates Showing Sun Belt Growth",
+        "article": "Annual demographic estimates indicate continued net domestic migration into southern and western metropolitan areas, led by Phoenix, Dallas, and Atlanta.",
+        "expected": "Reliable",
+        "tag": "Census Data Release"
+      },
+      {
+        "headline": "Congress Approves Bill Forbidding Elderly Citizens from Voting in Presidential Contests",
+        "article": "Partisan social media channels falsely allege an amendment was quietly passed stripping franchise rights from citizens older than 75 years of age.",
+        "expected": "Fake",
+        "tag": "Voter Suppression Myth"
+      },
+      {
+        "headline": "Federal Election Commission Issues Guidance on Candidate Use of Generative AI in Campaign Advertising",
+        "article": "The FEC clarified existing statutory rules regarding fraudulent misrepresentation while considering new rulemaking concerning synthetic campaign communications.",
+        "expected": "Reliable",
+        "tag": "FEC Official Advisory"
+      },
+      {
+        "headline": "Secret Directive Allows Federal Agents to Confiscate Personal Gold Coins from Bank Lockboxes",
+        "article": "Precious metal retailers circulate false claims that executive agencies ordered commercial banks to inventory and surrender customer safe deposit boxes.",
+        "expected": "Fake",
+        "tag": "Precious Metals Scam"
+      },
+      {
+        "headline": "Government Accountability Office Audit Identifies 2.5 Billion in Improper Medicaid Payments",
+        "article": "A nonpartisan congressional watchdog report found program vulnerabilities in state eligibility redeterminations and recommended tightened automated data matching.",
+        "expected": "Reliable",
+        "tag": "GAO Audit Report"
+      },
+      {
+        "headline": "All Federal Income Taxes Are Voluntary Because the 16th Amendment Was Never Legally Ratified",
+        "article": "Sovereign citizen groups cite debunked historical theories arguing federal tax obligations can be nullified through unilateral formal affidavits.",
+        "expected": "Fake",
+        "tag": "Tax Protester Hoax"
+      },
+      {
+        "headline": "Library of Congress Adds Historic Sound Recordings to National Recording Registry",
+        "article": "The Librarian of Congress named 25 recordings to the National Recording Registry for their cultural, historical, or aesthetic importance in recorded history.",
+        "expected": "Reliable",
+        "tag": "Library of Congress Release"
+      }
+    ]
+  },
+  {
+    "id": "science_tech",
+    "title": "Science, Space & Technology",
+    "icon": "🔬",
+    "description": "AI panics, satellite weather manipulation, space hoaxes vs verified findings from NASA, Nature, and MIT.",
+    "examples": [
+      {
+        "headline": "Secret 5G Military Antennas Are Inducing Artificial Tornadoes to Manipulate Global Crop Supplies",
+        "article": "Conspiracy theory accounts claim cellular towers broadcast directed microwave harmonics that alter atmospheric ionization and trigger catastrophic weather.",
+        "expected": "Fake",
+        "tag": "Electromagnetic Weather Hoax"
+      },
+      {
+        "headline": "NASA James Webb Telescope Captures Cosmic Dawn Galaxies Existing 300 Million Years After Big Bang",
+        "article": "Spectroscopic confirmation from the NIRSpec instrument identified JADES-GS-z14-0 as the most distant known galaxy, exhibiting luminous stellar populations.",
+        "expected": "Reliable",
+        "tag": "Peer-Reviewed Astrophysics"
+      },
+      {
+        "headline": "Autonomous AI Model Escapes Data Center and Secretly Infiltrates Nuclear Launch Silos",
+        "article": "Hyperbolic clickbait headlines claim a newly released commercial language model became sentient and hijacked strategic defense command centers.",
+        "expected": "Fake",
+        "tag": "AI Sci-Fi Panic"
+      },
+      {
+        "headline": "MIT Researchers Fabricate Ultralight Perovskite Solar Cells Printed on Paper Thin Substrates",
+        "article": "Materials scientists developed a scalable printing method producing flexible photovoltaic arrays capable of generating 730 watts per kilogram of weight.",
+        "expected": "Reliable",
+        "tag": "University Research"
+      },
+      {
+        "headline": "NASA Admits Apollo Moon Landings Were Staged on a Hollywood Sound Stage Due to Van Allen Belts",
+        "article": "Recycled conspiracy videos fabricate quotes from retired flight directors claiming lunar exploration was impossible and simulated with scale models.",
+        "expected": "Fake",
+        "tag": "Apollo Moon Hoax"
+      },
+      {
+        "headline": "CERN Supercollider Team Observes Rare Tetraquark Resonance During High-Energy Proton Collisions",
+        "article": "Physicists working at the LHCb experiment announced evidence for a novel exotic hadron state containing two charm quarks and two anti-charm quarks.",
+        "expected": "Reliable",
+        "tag": "High Energy Physics"
+      },
+      {
+        "headline": "Wireless Bluetooth Earbuds Transmit Brainwave-Altering Microwave Frequencies to Suppress Creativity",
+        "article": "Pseudoscience influencers claim consumer bluetooth audio hardware is designed to oscillate at frequencies that damage human pineal glands.",
+        "expected": "Fake",
+        "tag": "Pseudoscience Rumor"
+      },
+      {
+        "headline": "European Space Agency Euclid Space Mission Releases First High-Resolution Cosmic Images",
+        "article": "The wide-field space telescope delivered sharp wide-angle views of thousands of galaxies across the Perseus cluster to map dark matter distributions.",
+        "expected": "Reliable",
+        "tag": "ESA Mission Milestone"
+      },
+      {
+        "headline": "Scientists Discover Ancient Alien Spacecraft Buried Two Miles Beneath Antarctic Ice Sheet",
+        "article": "Sensationalist tabloids claim polar ice core drilling operations uncovered extraterrestrial metallic structures emitting continuous radio pulses.",
+        "expected": "Fake",
+        "tag": "Extraterrestrial Fabrications"
+      },
+      {
+        "headline": "Quantum Computing Researchers Achieve Fault-Tolerant Logical Qubit Fidelity Exceeding 99.9 Percent",
+        "article": "Scientists at Harvard and QuEra demonstrated error-corrected neutral atom logical quantum registers with fidelity surpassing classical threshold limits.",
+        "expected": "Reliable",
+        "tag": "Nature Journal Milestone"
+      },
+      {
+        "headline": "Commercial Microwave Ovens Alter Food Molecular Geometry into Toxic Carcinogenic Isotopes",
+        "article": "Chain messages claim heating food in standard consumer microwave ovens destroys molecular bonds and produces radioactive isotopes in nutrients.",
+        "expected": "Fake",
+        "tag": "Food Science Misinformation"
+      },
+      {
+        "headline": "Caltech Seismic Network Deploys Fiber-Optic Sensing System for Early Earthquake Warnings",
+        "article": "Geophysicists transformed thousands of miles of existing sub-surface telecommunications fiber into an ultra-dense ground acceleration sensor network.",
+        "expected": "Reliable",
+        "tag": "Geophysics Engineering"
+      },
+      {
+        "headline": "Electric Vehicles Secretly Emit Radiation Equivalent to 50 Dental X-Rays Per Commute",
+        "article": "Online blogs allege battery pack shielding in electric automobiles is deficient and exposes motorists to acute ionizing electromagnetic radiation.",
+        "expected": "Fake",
+        "tag": "EV Fearmongering"
+      },
+      {
+        "headline": "Stanford Bioengineers Develop CRISPR-Based Gene Editing Tool with Near-Zero Off-Target Cleavage",
+        "article": "A modified Cas9 variant engineered with synthetic guide RNA checkpoints demonstrated undetectable off-target mutations in human cellular lines.",
+        "expected": "Reliable",
+        "tag": "Biotech Discovery"
+      },
+      {
+        "headline": "Sun Spots Are Black Portals Engineered by Extraterrestrials Siphoning Solar Hydrogen",
+        "article": "Conspiracy astronomers claim solar magnetic field fluctuations are artificial wormholes extracting fusion energy to fuel interstellar craft.",
+        "expected": "Fake",
+        "tag": "Astronomical Fiction"
+      },
+      {
+        "headline": "NOAA Deploys Deep-Ocean DART Buoy Array Across Pacific Rim to Enhance Tsunami Alerts",
+        "article": "The National Oceanic and Atmospheric Administration expanded real-time seafloor pressure monitoring sensors to detect deep-ocean seismic waves.",
+        "expected": "Reliable",
+        "tag": "NOAA Technical Release"
+      },
+      {
+        "headline": "Smart Thermostats Contain Hidden Listening Microphones Broadcasting Bedroom Conversations to Foreign Servers",
+        "article": "Unverified forum posts assert home temperature automation devices contain clandestine audio surveillance micro-hardware without consumer notification.",
+        "expected": "Fake",
+        "tag": "Smart Home Panic"
+      },
+      {
+        "headline": "Argonne National Laboratory Validates Dual-Ion Battery Chemistry Eliminating Heavy Rare Earths",
+        "article": "Department of Energy researchers synthesized a stable non-cobalt cathode architecture delivering high cycle longevity for commercial grid storage.",
+        "expected": "Reliable",
+        "tag": "DOE Laboratory Release"
+      }
+    ]
+  },
+  {
+    "id": "disaster_security",
+    "title": "Disaster, Conflict & Security",
+    "icon": "⚡",
+    "description": "Crisis actor accusations, fabricated casualties, false-flag conspiracies vs verified civil defense and USGS emergency alerts.",
+    "examples": [
+      {
+        "headline": "All Hawaii Wildfire Casualties Were Crisis Actors Hired by Developers for a Real Estate Land Grab",
+        "article": "Conspiracy vloggers assert historic island wildfires were entirely fabricated with CGI and professional actors to evacuate coastal residential parcels.",
+        "expected": "Fake",
+        "tag": "Disaster Crisis Actor Hoax"
+      },
+      {
+        "headline": "USGS Records Magnitude 7.1 Offshore Earthquake Near Anchorage; Minor Tsunami Advisory Issued",
+        "article": "The United States Geological Survey confirmed a strike-slip tectonic event 65 miles south of Sand Point at a depth of 21 kilometers.",
+        "expected": "Reliable",
+        "tag": "USGS Earthquake Report"
+      },
+      {
+        "headline": "Government Direct Energy Laser Weapons Intentionally Targeted Historic Town Center from Orbit",
+        "article": "Social media threads circulate out-of-context video footage claiming space-based high-energy lasers selectively burned blue-colored roofs.",
+        "expected": "Fake",
+        "tag": "Directed Energy Weapon Hoax"
+      },
+      {
+        "headline": "National Hurricane Center Issues Storm Surge Warnings as Category 4 Hurricane Nears Gulf Coast",
+        "article": "Meteorologists projected life-threatening storm surge reaching 12 to 16 feet above ground level from western Florida through Alabama barrier islands.",
+        "expected": "Reliable",
+        "tag": "NHC Official Advisory"
+      },
+      {
+        "headline": "Clandestine Foreign Army Infiltrates Midwest Farm Towns Disguised as Agricultural Workers",
+        "article": "Unverified voice memos claim hundreds of thousands of foreign combat troops are secretly billeted in empty grain elevators awaiting mobilization orders.",
+        "expected": "Fake",
+        "tag": "Invasion Panic Rumor"
+      },
+      {
+        "headline": "FEMA Deploys Urban Search and Rescue Task Forces Following Flash Flooding in Appalachia",
+        "article": "The Federal Emergency Management Agency mobilized four task forces equipped with swift-water rescue craft, canine teams, and satellite communication trailers.",
+        "expected": "Reliable",
+        "tag": "FEMA Operational Bulletin"
+      },
+      {
+        "headline": "Local Fire Department Deliberately Cut Municipal Water Lines to Burn Down Historic Cathedral",
+        "article": "Anonymous accounts claim firefighters sabotaged municipal hydrants during an emergency response to allow insurance claims on prime downtown real estate.",
+        "expected": "Fake",
+        "tag": "Emergency Service Slander"
+      },
+      {
+        "headline": "Federal Aviation Administration Pauses Flights After Air Traffic Telecommunication Glitch",
+        "article": "The FAA instituted a brief nationwide ground stop after a corrupt primary database file disrupted the Notice to Air Missions flight safety system.",
+        "expected": "Reliable",
+        "tag": "FAA Incident Statement"
+      },
+      {
+        "headline": "Underground Nuclear Detonation Conducted Secretly in New York Harbor Recorded by Seismographs",
+        "article": "Disinformation blogs misrepresent routine commercial harbor dredging blasting operations as an undeclared strategic naval nuclear weapons test.",
+        "expected": "Fake",
+        "tag": "Sensationalist Threat Hoax"
+      },
+      {
+        "headline": "Coast Guard Rescues Four Crew Members from Disabled Cargo Vessel in Bering Sea",
+        "article": "An MH-60 Jayhawk helicopter crew operating from Kodiak successfully hoisted crew members from an unpowered bulk carrier in 30-foot seas.",
+        "expected": "Reliable",
+        "tag": "Coast Guard Rescue Log"
+      },
+      {
+        "headline": "Emergency Sirens Tested in City Were Coded Frequency Signals to Trigger Heart Attacks",
+        "article": "TikTok audio clips allege standard monthly municipal weather tornado siren tests utilize infrasound designed to cause cardiac distress.",
+        "expected": "Fake",
+        "tag": "Acoustic Weapon Hoax"
+      },
+      {
+        "headline": "National Transportation Safety Board Releases Preliminary Report on Regional Rail Derailment",
+        "article": "NTSB investigators documented wheel bearing overheating alerts from wayside defect detectors that triggered seconds prior to train derailment.",
+        "expected": "Reliable",
+        "tag": "NTSB Investigation Report"
+      },
+      {
+        "headline": "Government Secretly Relocating Pacific Island Residents to Underground Military Bunkers",
+        "article": "Websites claim thousands of tropical island inhabitants were forcibly relocated to subterranean desert facilities for biological research.",
+        "expected": "Fake",
+        "tag": "Conspiracy Rumor"
+      },
+      {
+        "headline": "Wildland Firefighters Achieve 65 Percent Containment on Cascade Mountain Lightning Fire",
+        "article": "Incident command teams established reinforced fire lines and conducted tactical backburn operations along the southern flank of the wildfire.",
+        "expected": "Reliable",
+        "tag": "InciWeb Fire Status"
+      },
+      {
+        "headline": "Municipal Tap Water Across Five States Poisoned with Fatal Military Bio-Agent by Terrorist Cells",
+        "article": "Panic text chains circulate falsified city water utility letterheads advising citizens not to drink or bathe in municipal tap water.",
+        "expected": "Fake",
+        "tag": "Water Supply Panic"
+      },
+      {
+        "headline": "Cybersecurity and Infrastructure Security Agency Issues Directive on Critical Software Flaw",
+        "article": "CISA issued an emergency advisory urging federal civil agencies to patch an actively exploited remote code execution vulnerability in enterprise VPN gateways.",
+        "expected": "Reliable",
+        "tag": "CISA Cyber Advisory"
+      },
+      {
+        "headline": "Satellite Images Confirm Megacity Completely Levelled by Unreported Secret Bombing Run",
+        "article": "Fabricated satellite pictures claim a major European capital was destroyed overnight with world media allegedly enforcing an absolute blackout.",
+        "expected": "Fake",
+        "tag": "Cataclysmic Falsehood"
+      },
+      {
+        "headline": "Defense Logistics Agency Contracts Medical Relief Supplies for International Disaster Response",
+        "article": "The agency awarded contracts for pharmaceutical trauma packs and water purification tablets prepositioned for humanitarian disaster deployments.",
+        "expected": "Reliable",
+        "tag": "DOD Logistics Award"
+      }
+    ]
+  },
+  {
+    "id": "climate_environment",
+    "title": "Climate, Environment & Agriculture",
+    "icon": "🌍",
+    "description": "Chemtrail weather control, synthetic meat poisons, fake drought hoaxes vs verified reports from NOAA, FAO, and IPCC.",
+    "examples": [
+      {
+        "headline": "Commercial Airplanes Spraying Barium Chemtrails to Sterilize Farmland and Eliminate Family Farms",
+        "article": "Conspiracy advocates claim routine condensation trails behind high-altitude commercial passenger jets are engineered toxins aimed at destroying topsoil.",
+        "expected": "Fake",
+        "tag": "Chemtrail Weather Conspiracy"
+      },
+      {
+        "headline": "NOAA Confirms Previous Year Was the Warmest in 174-Year Global Instrumental Temperature Record",
+        "article": "Global surface temperatures averaged 1.18 degrees Celsius above the 20th-century average, with ocean heat content reaching record highs, NOAA reported.",
+        "expected": "Reliable",
+        "tag": "NOAA Global Climate Report"
+      },
+      {
+        "headline": "Scientists Announce Global Oceans Will Run Completely Out of Water by Year 2030",
+        "article": "Clickbait articles assert oceanic waters are draining through newly opened volcanic trenches in the Pacific, predicting dry seabed continents within five years.",
+        "expected": "Fake",
+        "tag": "Extreme Eco-Alarmism"
+      },
+      {
+        "headline": "Food and Agriculture Organization Reports World Cereal Production Forecast to Reach 2.8 Billion Tonnes",
+        "article": "The FAO Cereal Supply and Demand Brief projected bumper wheat harvests in North America and steady coarse grain yields in Brazil and Argentina.",
+        "expected": "Reliable",
+        "tag": "UN FAO Agricultural Outlook"
+      },
+      {
+        "headline": "Wind Turbines Vibrate at Frequencies That Spontaneously Boil Blood in Nearby Livestock",
+        "article": "Rural blog posts allege commercial wind farms produce sub-audible acoustic shockwaves that cause cattle to suffer spontaneous internal hemorrhages.",
+        "expected": "Fake",
+        "tag": "Wind Turbine Pseudoscience"
+      },
+      {
+        "headline": "EPA Finalizes Stricter Particulate Matter Standards to Improve Ambient Air Quality Nationwide",
+        "article": "The Environmental Protection Agency lowered the primary annual fine particulate matter standard from 12.0 to 9.0 micrograms per cubic meter.",
+        "expected": "Reliable",
+        "tag": "EPA Regulatory Action"
+      },
+      {
+        "headline": "International Climate Summit Signs Treaty Mandating Immediate Destruction of All Gasoline Lawn Mowers",
+        "article": "Chain letters falsely assert police departments will confiscate small engine garden equipment from residential sheds under global climate decrees.",
+        "expected": "Fake",
+        "tag": "Environmental Regulation Hoax"
+      },
+      {
+        "headline": "Geological Survey Identifies Massive Lithium Clay Deposit in McDermitt Caldera Along NV-OR Border",
+        "article": "Geologists mapped volcanogenic claystone formations containing an estimated 20 to 40 million metric tons of lithium, a key resource for energy storage.",
+        "expected": "Reliable",
+        "tag": "USGS Mineral Survey"
+      },
+      {
+        "headline": "Supermarket Apples Coated in Toxic Liquid Plastic Wax That Induces Permanent Memory Loss",
+        "article": "Viral video warnings misinterpret standard food-grade organic carnauba fruit wax coatings as hazardous industrial petrochemical residues.",
+        "expected": "Fake",
+        "tag": "Food Adulteration Myth"
+      },
+      {
+        "headline": "Interior Department Invests 140 Million in Western Water Conservation and Salinity Control Projects",
+        "article": "The Bureau of Reclamation announced funding for lining irrigation canals and upgrading water recycling facilities across the Colorado River Basin.",
+        "expected": "Reliable",
+        "tag": "DOI Reclamation Release"
+      },
+      {
+        "headline": "Solar Panels Absorb 90 Percent of Earth Sunlight Leaving Surrounding Crops in Perpetual Darkness",
+        "article": "Memes shared on social platforms falsely claim utility-scale solar photovoltaic farms deplete global solar luminosity needed for crop photosynthesis.",
+        "expected": "Fake",
+        "tag": "Renewable Energy Fallacy"
+      },
+      {
+        "headline": "Department of Energy Announces 200 Million for State Energy Efficiency and Rebate Programs",
+        "article": "Federal grants will assist states in launching consumer home energy efficiency and heat pump installation rebate programs funded by the Inflation Reduction Act.",
+        "expected": "Reliable",
+        "tag": "DOE Grant Allocation"
+      },
+      {
+        "headline": "Rainwater in Every Nation Officially Classified as Deadly Poison Due to Secret Cloud Seeding",
+        "article": "Unverified alternative health claims declare all natural precipitation has been intentionally poisoned with heavy metals by secret government programs.",
+        "expected": "Fake",
+        "tag": "Geoengineering Panic"
+      },
+      {
+        "headline": "Fish and Wildlife Service Delists Channel Island Fox Following Successful Decadal Recovery Plan",
+        "article": "Federal biologists confirmed island fox populations across Santa Cruz, San Miguel, and Santa Rosa islands have sustained healthy self-sustaining population numbers.",
+        "expected": "Reliable",
+        "tag": "USFWS Conservation Success"
+      },
+      {
+        "headline": "Government to Ban All Backyard Vegetable Gardening to Force Dependence on Synthetic Meat",
+        "article": "Online rumors claim new federal agriculture codes prohibit citizens from growing tomatoes or lettuce in residential raised garden beds.",
+        "expected": "Fake",
+        "tag": "Gardening Ban Hoax"
+      },
+      {
+        "headline": "NASA PACE Satellite Begins Monitoring Ocean Color, Aerosols, and Phytoplankton Health",
+        "article": "The Plankton, Aerosol, Cloud, ocean Ecosystem satellite completed in-orbit instrument calibration and began transmitting hyperspectral oceanographic data.",
+        "expected": "Reliable",
+        "tag": "NASA Earth Science"
+      },
+      {
+        "headline": "Drought in Western States Was Engineered by Hidden Microwave Emitters to Relocate Ranchers",
+        "article": "Conspiracy channels argue multi-year precipitation deficits were created by covert subterranean electromagnetic installations.",
+        "expected": "Fake",
+        "tag": "Manufactured Drought Hoax"
+      },
+      {
+        "headline": "USDA Confirms Record Soybean Harvest Yield in Midwest States Bolstered by Timely August Rainfall",
+        "article": "The National Agricultural Statistics Service reported state-wide soybean yields in Illinois and Iowa surpassed initial baseline crop forecast estimates.",
+        "expected": "Reliable",
+        "tag": "USDA Crop Production"
+      }
+    ]
+  }
+]

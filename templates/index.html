@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoShield | Explainable Disinformation & Fake News Detector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="layout-wrapper">
+        <!-- ================= AUTO-COLLAPSIBLE VERTICAL SIDEBAR ================= -->
+        <!-- Collapses to icon-only when not hovered; Expands smoothly on hover -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-brand">
+                    <div class="brand-icon">🛡️</div>
+                    <div class="brand-text-group">
+                        <span class="brand-name">InfoShield</span>
+                        <span class="brand-tag">Supervised Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical Navigation Menu -->
+            <nav class="sidebar-nav">
+                <button class="nav-item-btn active" data-tab="scanner-tab" title="Credibility Scanner">
+                    <span class="nav-icon">🔍</span>
+                    <span class="nav-label">Credibility Scanner</span>
+                </button>
+                <button class="nav-item-btn" data-tab="redteam-tab" title="Red-Teaming Arena (6 Categories)">
+                    <span class="nav-icon">🎯</span>
+                    <span class="nav-label">Red-Teaming Arena</span>
+                </button>
+                <button class="nav-item-btn" data-tab="stats-tab" title="Model & Feedback Dataset Transparency">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-label">Dataset & Transparency</span>
+                </button>
+                <button class="nav-item-btn" data-tab="extension-tab" title="Chrome Extension Integration">
+                    <span class="nav-icon">🧩</span>
+                    <span class="nav-label">Chrome Extension</span>
+                </button>
+            </nav>
+
+            <!-- Sidebar Footer: Stats & Theme Switcher -->
+            <div class="sidebar-footer">
+                <div id="sidebar-stats-badge" class="sidebar-stats" title="Active Model on Localhost">
+                    <span class="pulse-dot"></span>
+                    <span class="sidebar-stats-text">Model Active (81.3%)</span>
+                </div>
+                <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Light / Dark Mode">
+                    <span id="theme-icon">🌙</span>
+                    <span id="theme-text" class="nav-label">Dark Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ================= MAIN CONTENT AREA ================= -->
+        <main id="main-content" class="main-content">
+
+            <!-- Persistent Top Header: Logo + Title Left-Aligned (Positioned so sidebar expansion never covers it) -->
+            <header class="page-top-header">
+                <div class="page-brand-badge">
+                    <span class="page-brand-logo">🛡️</span>
+                    <div class="page-brand-text">
+                        <div class="page-brand-row">
+                            <h1 class="page-brand-title">InfoShield</h1>
+                            <span class="page-brand-pill">Localhost Supervised ML</span>
+                        </div>
+                        <p class="page-brand-subtitle">Explainable Disinformation Detection & Continual Learning with User Feedback Memory</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- ================= TAB 1: CREDIBILITY SCANNER ================= -->
+            <section id="scanner-tab" class="tab-content active">
+                <div class="scanner-viewport-wrapper">
+                    <div id="scanner-stage" class="scanner-stage">
+                        
+                        <!-- Left / Centralized Input Section -->
+                        <div id="input-section" class="input-section">
+                            <div class="card scanner-card">
+                                <div class="card-header">
+                                    <div class="header-title-group">
+                                        <h2 class="card-title"><span>📝</span> News Article Verification</h2>
+                                        <p class="card-desc">Evaluate the credibility of news claims. Enter a headline, the article body, or both.</p>
+                                    </div>
+                                    <span class="badge-input-mode" id="input-mode-badge">⚡ Dual-Input Scanner</span>
+                                </div>
+
+                                <!-- Sample Statements Quick Chips -->
+                                <div class="sample-chips-label">Quick Test Presets (Click to Populate):</div>
+                                <div class="sample-chips">
+                                    <button class="chip-btn" data-preset="conspiracy">
+                                        🏥 Health Conspiracy
+                                    </button>
+                                    <button class="chip-btn" data-preset="official">
+                                        📈 Official Jobs Report
+                                    </button>
+                                    <button class="chip-btn" data-preset="weather">
+                                        ⚡ 5G Weather Claim
+                                    </button>
+                                    <button class="chip-btn" data-preset="space">
+                                        🔭 NASA Webb Telescope
+                                    </button>
+                                    <button class="chip-btn" data-preset="politics">
+                                        🏛️ Political Tax Claim
+                                    </button>
+                                </div>
+
+                                <!-- Input 1: Headline / Title -->
+                                <div class="form-group">
+                                    <label for="headline-input" class="input-label">
+                                        <span>📰 Article Headline / Claim Title</span>
+                                        <span class="label-optional">(Optional if article body is provided)</span>
+                                    </label>
+                                    <input 
+                                        type="text" 
+                                        id="headline-input" 
+                                        class="headline-input" 
+                                        placeholder="Enter news headline (e.g., 'Scientists Discover Revolutionary Herbal Cancer Cure Concealed by Authorities')..."
+                                    >
+                                </div>
+
+                                <!-- Input 2: Article Body / Full Statement -->
+                                <div class="form-group">
+                                    <div class="label-row">
+                                        <label for="article-input" class="input-label">
+                                            <span>📄 Article Body / Statement Excerpt</span>
+                                            <span class="label-optional">(Optional if headline is provided)</span>
+                                        </label>
+                                        <span id="char-counter" class="char-counter">0 chars</span>
+                                    </div>
+                                    <textarea 
+                                        id="article-input" 
+                                        class="article-input" 
+                                        placeholder="Paste full article text, statement transcript, or social media paragraph here... Press Ctrl+Enter to analyze."
+                                    ></textarea>
+                                </div>
+
+                                <!-- Bottom Action Row -->
+                                <div class="action-buttons-row">
+                                    <button id="clear-btn" class="btn-secondary" title="Clear inputs and close analysis drawer">
+                                        🗑️ Clear
+                                    </button>
+                                    <button id="analyze-btn" class="btn-primary">
+                                        <span>🔍</span> Analyze Authenticity & Explain
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Sliding Pop-Out Analysis Window (Synchronized Split) -->
+                        <div id="analysis-drawer" class="analysis-drawer">
+                            <div class="card analysis-card">
+                                <div class="drawer-header">
+                                    <h3 class="drawer-title"><span>🧠</span> Credibility & Verification Report</h3>
+                                    <button id="close-drawer-btn" class="close-drawer-btn" title="Close and return input to center">✕</button>
+                                </div>
+
+                                <!-- 1. Interactive Emoji & Verdict Hero Banner -->
+                                <div id="verdict-banner" class="verdict-banner">
+                                    <div class="verdict-hero">
+                                        <!-- Animated interactive emoji: Green Thumbs Up for correct, Red Thumbs Down for fake -->
+                                        <div id="verdict-emoji" class="verdict-emoji" title="Interactive Emoji - Click to test reaction!">👍</div>
+                                        <div class="verdict-details">
+                                            <div id="verdict-label" class="verdict-label">Reliable / Credible</div>
+                                            <div id="verdict-confidence-badge" class="verdict-confidence-badge">92.4% Confidence</div>
+                                            <div id="verdict-scope-badge" class="verdict-scope-badge">Evaluated: Headline + Article</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2. Dual Probability Meter -->
+                                <div class="meter-card">
+                                    <div class="meter-header">
+                                        <span class="meter-lbl-rel">👍 Reliable / Credible: <strong id="prob-rel-val">0%</strong></span>
+                                        <span class="meter-lbl-fake">👎 Fake / Misleading: <strong id="prob-fake-val">0%</strong></span>
+                                    </div>
+                                    <div class="meter-bar-track">
+                                        <div id="meter-fill-reliable" class="meter-bar-fill reliable" style="width: 50%;"></div>
+                                        <div id="meter-fill-fake" class="meter-bar-fill fake" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- 3. Plain-English Structured Rationale -->
+                                <div class="explanation-section">
+                                    <div class="section-subtitle">Structured Rationale & Context:</div>
+                                    <div id="rationale-text" class="rationale-box"></div>
+                                </div>
+
+                                <!-- 4. Token Attribution Visualizer -->
+                                <div class="token-visualizer">
+                                    <div class="section-subtitle">Token Drivers (Red = Disinformation, Green = Credibility):</div>
+                                    <div id="token-cloud" class="token-cloud"></div>
+                                </div>
+
+                                <!-- 5. Interactive Human-in-the-Loop Feedback Card -->
+                                <div id="feedback-card" class="feedback-card">
+                                    <div class="feedback-header">
+                                        <span>💬</span>
+                                        <span>Teach InfoShield: Is this prediction accurate?</span>
+                                    </div>
+                                    <div class="feedback-actions">
+                                        <button id="fb-agree-btn" class="feedback-btn selected">👍 Model is Correct</button>
+                                        <button id="fb-disagree-real-btn" class="feedback-btn">⚠️ Actually Reliable</button>
+                                        <button id="fb-disagree-fake-btn" class="feedback-btn">⚠️ Actually Fake</button>
+                                    </div>
+                                    <div style="margin-bottom: 10px;">
+                                        <input 
+                                            type="text" 
+                                            id="fb-notes" 
+                                            placeholder="Optional: Proof link, source, or correction note..." 
+                                            class="feedback-notes-input"
+                                        >
+                                    </div>
+                                    <button id="fb-submit-btn" class="btn-primary" style="padding: 10px; font-size: 13px;">
+                                        Teach Model & Save to user_feedback Dataset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= TAB 2: RED-TEAMING ARENA (6 CATEGORIES, 2x3 GRID) ================= -->
+            <section id="redteam-tab" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h2 class="card-title"><span>🎯</span> Red-Teaming & Benchmark Arena (2×3 Grid)</h2>
+                            <p class="card-desc">
+                                Choose a domain to explore 18 curated benchmark cases (both disinformation and verified news). Click any case to test in the scanner!
+                            </p>
+                        </div>
+                        <div id="redteam-breadcrumb" style="display: none;">
+                            <button id="back-to-categories-btn" class="btn-secondary" style="padding: 6px 14px; font-size: 12px;">
+                                ← Back to 6 Categories (2×3 Grid)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- 2x3 Category Grid -->
+                    <div id="redteam-category-grid" class="redteam-category-grid">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+
+                    <!-- Category Detail View (18 examples per category) -->
+                    <div id="redteam-detail-view" style="display: none; margin-top: 16px;">
+                        <div class="category-detail-header">
+                            <div>
+                                <h3 id="current-category-title" style="font-size: 18px; font-weight: 700;"></h3>
+                                <p id="current-category-desc" style="font-size: 13px; color: var(--text-muted); margin-top: 4px;"></p>
+                            </div>
+                            <div class="category-filter-chips">
+                                <button class="filter-pill active" data-filter="all">All (18)</button>
+                                <button class="filter-pill" data-filter="Fake">Fake Only (9)</button>
+                                <button class="filter-pill" data-filter="Reliable">Reliable Only (9)</button>
+                            </div>
+                        </div>
+
+                        <div id="redteam-examples-container" class="redteam-examples-container">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= TAB 3: DATASET & MODEL TRANSPARENCY ================= -->
+            <section id="stats-tab" class="tab-content">
+                <!-- Metrics Grid -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-lbl">Held-Out Test Accuracy</div>
+                        <div id="metric-accuracy" class="metric-val">81.3%</div>
+                        <div class="metric-sub">Evaluated on LIAR test set</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-lbl">Base Training Corpus</div>
+                        <div id="metric-samples" class="metric-val">31,421</div>
+                        <div class="metric-sub">LIAR + PolitiFact statements</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-lbl">user_feedback Dataset Entries</div>
+                        <div id="metric-feedback" class="metric-val">0</div>
+                        <div class="metric-sub">Stored in datasets/user_feedback.json</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-lbl">Vocabulary Feature Space</div>
+                        <div id="metric-vocab" class="metric-val">30,000</div>
+                        <div class="metric-sub">TF-IDF unigrams & bigrams</div>
+                    </div>
+                </div>
+
+                <!-- User Feedback Dataset Table (Stored on Localhost) -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title"><span>📁</span> User Feedback Dataset (<code>datasets/user_feedback.json</code>)</h3>
+                            <p class="card-desc">Every query is recorded on localhost. If uncorrected, it is assumed accurate; if corrected, the model remembers the correction for future identical queries.</p>
+                        </div>
+                        <span class="badge-input-mode">💾 Localhost Dataset Memory</span>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>News Excerpt</th>
+                                    <th>Model Pred</th>
+                                    <th>Community Votes 👎/👍</th>
+                                    <th>Effective Verdict</th>
+                                    <th>Verdict Source</th>
+                                    <th>Last Updated</th>
+                                </tr>
+                            </thead>
+                            <tbody id="user-feedback-table-body">
+                                <tr><td colspan="7" class="table-empty">Loading user_feedback.json dataset...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Recent Query History -->
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title"><span>📜</span> Recent Query History</h3>
+                            <p class="card-desc">Audit trail of all recent queries, confidence scores, and memory recall status.</p>
+                        </div>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Text Excerpt</th>
+                                    <th>Headline</th>
+                                    <th>Verdict</th>
+                                    <th>Confidence</th>
+                                    <th>Status / Memory</th>
+                                    <th>Timestamp</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-table-body">
+                                <tr><td colspan="6" class="table-empty">Loading history...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= TAB 4: CHROME EXTENSION ================= -->
+            <section id="extension-tab" class="tab-content">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title"><span>🧩</span> Chrome Extension (Manifest V3) Integration</h2>
+                    </div>
+                    <p class="card-desc">
+                        InfoShield connects directly with Google Chrome. Highlight any sentence or paragraph on any website to verify claims against your localhost model!
+                    </p>
+
+                    <div class="grid-layout" style="margin-top: 20px;">
+                        <div class="extension-guide-box">
+                            <h3 class="box-title">How to Install into Google Chrome:</h3>
+                            <ol class="guide-steps">
+                                <li>Open Google Chrome and navigate to <code>chrome://extensions</code></li>
+                                <li>Toggle <strong>"Developer mode"</strong> on in the top-right corner.</li>
+                                <li>Click the <strong>"Load unpacked"</strong> button.</li>
+                                <li>Select the directory: <code>/home/Aruuu/int395/chrome_extension</code></li>
+                                <li>Done! InfoShield is now pinned to your Chrome toolbar.</li>
+                            </ol>
+                        </div>
+
+                        <div class="extension-guide-box">
+                            <h3 class="box-title">Extension Capabilities:</h3>
+                            <ul class="guide-steps">
+                                <li><strong>In-Page Selection:</strong> Select text anywhere on the web to trigger verification.</li>
+                                <li><strong>Right-Click Context Menu:</strong> Right-click selected text and select <em>"Verify with InfoShield"</em>.</li>
+                                <li><strong>FastAPI Bridge:</strong> Communicates seamlessly with your local InfoShield backend at <code>http://localhost:8000/api/predict</code>.</li>
+                                <li><strong>In-Browser Feedback:</strong> Directly submit thumbs up/down corrections from Chrome to update <code>datasets/user_feedback.json</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
